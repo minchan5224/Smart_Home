@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="@drawable/back_g"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:id="@+id/topText"
+    />
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topText"
+        android:textFilterEnabled="true"
+        android:dividerHeight="4dp"
+        android:divider="#00ffffff"
+        />
+
+</RelativeLayout>
+
+

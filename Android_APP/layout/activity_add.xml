@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_g"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.minch.smart_home_mate_rsapberry.AddActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="ID       :"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/inputId"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/idText"
+                android:layout_alignBottom="@+id/idText"
+                android:layout_alignStart="@id/inputRePw"
+                android:layout_below="@+id/idText"
+                android:layout_toEndOf="@+id/idText"
+                android:hint="아이디를 입력하세요." />
+
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/inputId"
+                android:layout_alignBottom="@+id/inputId"
+                android:layout_toEndOf="@+id/inputId"
+                android:background="@drawable/btn_bg"
+                android:text="중복확인"
+                android:textSize="6dp" />
+
+            <TextView
+                android:id="@+id/pwText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idText"
+                android:layout_marginTop="16dp"
+                android:text="PW    : "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/inputPw"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pwText"
+                android:layout_alignBottom="@+id/pwText"
+                android:layout_alignStart="@id/inputRePw"
+                android:layout_toEndOf="@+id/pwText"
+                android:hint="비밀번호를 입력하세요."
+                android:password="true" />
+
+            <TextView
+                android:id="@+id/repwText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pwText"
+                android:layout_marginTop="16dp"
+                android:text="rePW :"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/inputRePw"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/repwText"
+                android:layout_alignBottom="@+id/repwText"
+                android:layout_toEndOf="@+id/repwText"
+                android:hint="동일한 비밀번호를 입력하세요."
+                android:password="true" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repwText"
+                android:layout_marginTop="16dp"
+                android:text="이름   : "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nameText"
+                android:layout_alignBottom="@+id/nameText"
+                android:layout_alignStart="@id/inputRePw"
+                android:layout_toEndOf="@+id/idText"
+                android:hint="이름을 입력하세요" />
+
+            <TextView
+                android:id="@+id/codeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameText"
+                android:layout_marginTop="16dp"
+                android:text="Code : "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/inputCode"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/codeText"
+                android:layout_alignBottom="@+id/codeText"
+                android:layout_alignStart="@id/inputRePw"
+                android:layout_toEndOf="@+id/codeText"
+                android:hint="코드를 입력하세요." />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/codeText"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:text="회원가입" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="          " />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btnAdd"
+                    android:layout_alignBottom="@+id/btnAdd"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_toEndOf="@+id/btnAdd"
+                    android:background="@drawable/btn_bg"
+                    android:text="뒤로가기" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
